@@ -1,0 +1,32 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__logo {
+    width: 15%;
+    margin-top: 20px;
+}
+
+.header__title {
+    color: #fff;
+    font-size: 6rem;
+    text-align: center;
+    line-height: 6.25rem;
+}
+
+.header__subtitle {
+    color: #fff;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    text-align: center;
+}
+
+.header__city-image {
+    width: 984px;
+    height: 615px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
