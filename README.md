@@ -19,3 +19,7 @@ The homeland website is the fifth project in the TripleTen Web Development Progr
 
 - HTML5
 - CSS
+
+# :computer: Link to GitHub Pages
+
+Url: https://alepascal-front.github.io/web_project_homeland/
