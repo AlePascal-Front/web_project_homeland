@@ -62,7 +62,7 @@
 
   .content__paragraph {
     width: 100%;
-    font-size: (0.9rem, 1rem, 1.1rem);
+    font-size: clamp(0.9rem, 1rem, 1.1rem);
   }
 }
 
