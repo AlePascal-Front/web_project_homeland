@@ -1,41 +1,48 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
 .content {
-    color: #fff;
-    margin: 0 auto;
-    width: 65%;
-    height: 31.61%;
-    display: flex;
-    flex-direction: column;
+  color: #fff;
+  margin: 0 auto;
+  width: 65%;
+  height: 31.61%;
+  display: flex;
+  flex-direction: column;
 }
 
 .content__title {
-    font-weight: 900;
-    font-size: 3.375rem;
-    line-height: 3.375rem;
-    width: 85%;
-    max-width: 100vw;
-    height: auto;
+  font-weight: 900;
+  font-size: 3.375rem;
+  line-height: 3.375rem;
+  width: 85%;
+  max-width: 100vw;
+  height: auto;
 }
 
 .content__citation-block {
-    width: 72%;
-    font-weight: 400;
-    font-size: 1.5rem;
-    line-height: 3.625rem;
+  width: 72%;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 3.625rem;
 }
 
 .content__citation-block-footer {
-    text-align: right;
+  text-align: right;
 }
 
 .content__paragraph {
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 163%;
-    width: 68%;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 163%;
+  width: 68%;
 }
 
-@media screen and (max-width: 1024px) {
-
+@media screen and (max-width: 1024px) and (min-width: 729px) {
   .content {
     margin: 0;
     width: 100%;
@@ -50,7 +57,7 @@
 
   .content__citation-block {
     width: 100%;
-    font-size: clamp(1rem, 4vw, 1.3rem);; /* Tamaño fluido */
+    font-size: clamp(1rem, 4vw, 1.3rem); /* Tamaño fluido */
   }
 
   .content__paragraph {
@@ -62,25 +69,40 @@
 @media screen and (max-width: 728px) and (min-width: 320px) {
   .content {
     width: 100%;
-    padding: 0 0.5rem;
+    max-width: 100%;
+    /* prevents text overflow */
+    word-break: break-word;
+    overflow-wrap: break-word;
+    margin-right: auto;
+    padding: 5px; /* pad to fit design brief */
   }
 
   .content__title {
     width: 100%;
-    font-size: clamp(1.2rem, 6vw, 2rem);
-    line-height: 1.1;
+    max-width: 100%;
+    font-size: clamp(1.2rem, 2rem, 2.1rem);
+    line-height: 2.188rem;
     text-align: left;
   }
 
   .content__citation-block {
     width: 100%;
-    font-size: clamp(0.95rem, 4vw, 1.1rem);
-    line-height: 1.5;
+    max-width: 100%;
+    font-size: clamp(0.95rem, 1.5rem, 2rem);
+    line-height: 1.875rem;
+    margin: auto;
+  }
+
+  .content__citation-block-footer {
+    width: 100%;
+    max-width: 100%;
+    font-size: clamp(0.95rem, 1.5rem, 2rem);
   }
 
   .content__paragraph {
     width: 100%;
-    font-size: clamp(0.85rem, 3vw, 1rem);
+    max-width: 100%;
+    font-size: clamp(0.85rem, 1rem, 1.1rem);
     line-height: 1.5;
   }
 }
