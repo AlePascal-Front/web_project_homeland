@@ -8,6 +8,7 @@ The homeland website is the fifth project in the TripleTen Web Development Progr
 - Responsive Design
 - General styling
 - "@font-face" statements usage
+- Visit it from everywhere: support for mobile screens
 
 # Sections Included
 
