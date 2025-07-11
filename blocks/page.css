@@ -1,5 +1,5 @@
 .page {
-    font-family: "Inter", system-ui;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
     line-height: 1.5;
     font-size: 16px;
     background-color: #2a2c2f;
@@ -19,5 +19,3 @@
     overflow-x: hidden;
   }
 }
-
-
