@@ -40,6 +40,9 @@
   font-size: 1rem;
   line-height: 163%;
   width: 68%;
+
+  /* Separating paragraph from photo-grid section */
+  margin-bottom: 100px;
 }
 
 @media screen and (max-width: 1024px) and (min-width: 729px) {
