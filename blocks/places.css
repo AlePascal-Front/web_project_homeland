@@ -14,18 +14,19 @@
 
   /* grid layout */
   grid-template-areas:
-  "title artists"
-  "city-image content-block"
-  "button .";
-
-
+  /* "." represents placeholder item */
+  ". title artists ."
+  ". city-image content-block ."
+  ". button . .";
 
   /* since I'm unsure of the title width, and button */
-  /* let them be of keyword auto to let the computer handle it */
-  grid-template-rows: min-content 40% 1fr;
-  grid-template-columns: 55% calc(100% - 55%);
+  /* let them be of keyword auto to let the browser handle it */
+  grid-template-rows: min-content 43.2% 1fr;
 
-  gap: 20px;
+  /* let each of the percentages sum up to 100% to use all space */
+  grid-template-columns: 10% 36.3% 43.7% 10%;
+
+  gap: 40px;
 }
 
 .places__title {
@@ -44,18 +45,25 @@
   height: 100%;
   object-fit: cover;
   /* order: 2; */
+
+  box-shadow: 10px 10px 25px 0px #00000080;
 }
 
 .places__artists {
   grid-area: artists;
 
-  /* let it be of the content's size */
+  /* let the width be of the content's size */
   width: auto;
 
   /* same goes for height */
   height: auto;
   /* order: 4; */
   /* grid-column: 2; */
+
+  /* line to help us accomodate text */
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
 }
 
 .places__artist-text_accent {
@@ -70,18 +78,29 @@
   color: #fff;
   font-size: 1.125rem;
   font-weight: 400;
+  margin: 0;
+  /* position: absolute;
+  bottom: 0; */
 }
 
 .places__content-block {
   width: 100%;
   height: auto;
   /* order: 5; */
+  grid-area: content-block;
+  /* padding-bottom: 15%; */
 }
 
 .places__content-text {
   font-weight: 400;
   font-size: 1.125rem;
   line-height: 1.63;
+  text-align: left;
+  width: 73%;
+}
+
+.places__content-text:nth-child(1) {
+  margin-top: 0px;
 }
 
 .places__button {
@@ -90,17 +109,26 @@
   /* order: 3; */
 
   /* styling of button */
-  width: auto;
+  width: max-content;
   height: min-content;
   background: linear-gradient(90deg, #0278fe 0%, #003a7b 99.98%);
   font-size: 1.125rem;
   font-weight: 600;
   line-height: 1;
   color: #fff;
-  padding: 16px 8px 16px 8px;
+
+  /* top and bottom | left and right */
+  padding: 13px 20px;
+  border: none;
+  border-radius: 4px;
+
+  margin-top: 5%;
+  margin-bottom: 20%;
+
+  box-shadow: 5px 5px 10px 0px #00000040;
 }
 
-.places__buton:hover {
+.places__button:hover {
   background: linear-gradient(
     90deg,
     rgba(2, 120, 254, 0.25) 0%,
