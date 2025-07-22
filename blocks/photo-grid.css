@@ -1,7 +1,5 @@
 .photo-grid {
-  width: 95vw;
-
-  /* temporal line. Should revisit later */
+  width: 100%;
   height: auto;
 
   row-gap: 10px;
@@ -11,11 +9,16 @@
   grid-template-rows: repeat(2, 4fr);
   grid-template-columns: repeat(4, 4fr);
   align-items: center;
-  padding-left: 10px;
-  padding-right: 10px;
-
+  padding: 0 30px;
   /* positioning left */
-  transform: translate(-16%, 0);
+  /* unused code for being too brute-force*/
+  /* transform: translate(-16%, 0);
+  margin-bottom: calc(20px * 3); */
+
+  margin: auto 0;
+
+  /* line that separates the photo grid from the content */
+  margin-bottom: 10%;
 }
 
 .photo-grid__image-item {
