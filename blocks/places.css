@@ -2,8 +2,7 @@
   display: grid;
 
   /* setting up the cards' positioning to show content */
-  grid-template-rows:
-    repeat(4, auto);
+  grid-template-rows: repeat(4, auto);
   grid-template-columns: 100%;
 }
 
@@ -15,9 +14,9 @@
   /* grid layout */
   grid-template-areas:
   /* "." represents placeholder item */
-  ". title artists ."
-  ". city-image content-block ."
-  ". button . .";
+    ". title artists ."
+    ". city-image content-block ."
+    ". button . .";
 
   /* since I'm unsure of the title width, and button */
   /* let them be of keyword auto to let the browser handle it */
@@ -156,4 +155,38 @@
     rgba(0, 58, 123, 0.25) 99.98%
   );
   cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 729px) {
+  .places {
+    margin-top: calc(20px * 4);
+  }
+
+  .places__content {
+    grid-template-areas:
+      "title artists"
+      "city-image content-block"
+      "button content-block";
+
+    grid-template-rows: min-content 340px min-content;
+    grid-template-columns: 340px 1fr;
+  }
+
+  .places__artists {
+    display: block;
+  }
+
+  .places__artists,
+  .places__content-block {
+    width: 100%;
+  }
+
+  .places__content-text {
+    width: 100%;
+  }
+
+  .places__title {
+    font-size: 2.625rem;
+    position: relative;
+  }
 }
