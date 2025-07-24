@@ -93,7 +93,7 @@
     word-break: break-word;
     overflow-wrap: break-word;
     margin-right: auto;
-    padding: 5px; /* pad to fit design brief */
+    padding: 0; /* pad to fit design brief */
   }
 
   .content__title {
@@ -110,12 +110,18 @@
     font-size: clamp(0.95rem, 1.5rem, 2rem);
     line-height: 1.875rem;
     margin: auto;
+
+    /* adjust to brief */
+    padding: 0 10px;
   }
 
   .content__citation-block-footer {
     width: 100%;
     max-width: 100%;
     font-size: clamp(0.95rem, 1.5rem, 2rem);
+
+    /* adjust to brief */
+    padding-right: 10px;
   }
 
   .content__paragraph {
@@ -123,5 +129,6 @@
     max-width: 100%;
     font-size: clamp(0.85rem, 1rem, 1.1rem);
     line-height: 1.5;
+    padding: 0 10px;
   }
 }
