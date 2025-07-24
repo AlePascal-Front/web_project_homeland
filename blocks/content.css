@@ -67,16 +67,21 @@
     width: 90%;
     font-size: 2.813rem;
     line-height: 2.2rem;
+    padding-left: 0;
+    line-height: 3.063rem;
   }
 
   .content__citation-block {
     width: 100%;
-    font-size: clamp(1rem, 4vw, 1.3rem); /* Tamaño fluido */
+    font-size: clamp(1rem, 1.5rem, 1.6rem); /* Tamaño fluido */
+    padding: 0;
+    line-height: 2.125rem;
   }
 
   .content__paragraph {
     width: 100%;
     font-size: clamp(0.9rem, 1rem, 1.1rem);
+    padding: 0;
   }
 }
 
