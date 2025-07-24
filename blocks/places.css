@@ -172,10 +172,6 @@
     grid-template-columns: 340px 1fr;
   }
 
-  .places__artists {
-    display: block;
-  }
-
   .places__artists,
   .places__content-block {
     width: 100%;
@@ -190,3 +186,8 @@
     position: relative;
   }
 }
+
+/* TODO
+LEARN HOW TO
+DELETE BR TAG DINAMICALLY
+USING JAVASCRIPT */
