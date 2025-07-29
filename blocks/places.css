@@ -86,7 +86,7 @@
   justify-content: end;
 }
 
-.places__artist-text__accent {
+.places__artist-text-accent {
   color: #aaaaaa;
   line-height: 1;
   font-size: 0.75rem;
@@ -201,6 +201,7 @@
     font-size: 2rem;
     margin-top: 20px;
     padding-left: 10px;
+    white-space: pre-line;
   }
 
   .places__artists {
