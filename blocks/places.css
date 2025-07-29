@@ -86,7 +86,7 @@
   justify-content: end;
 }
 
-.places__artist-text__type_accent {
+.places__artist-text--accent {
   color: #aaaaaa;
   line-height: 1;
   font-size: 0.75rem;
